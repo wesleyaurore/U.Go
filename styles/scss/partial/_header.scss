@@ -1,0 +1,145 @@
+/*------------Header-----------*/
+
+header {
+	width: 100%;
+	background: #358ccb; 
+	
+	h1 {
+		display: inline;
+	}
+
+	@media screen and (max-width: 540px){
+		a.logo {
+			width: 120px;
+			display: block;
+			margin: 0 auto;
+
+		}
+	}
+
+	a img {
+		margin: 10px 20px 0;
+		width: 110px;	
+	}
+
+	@media screen and (max-width: 540px){
+		header a img{
+			margin: 0px auto 0;
+			width: 110px;	
+		}
+	}
+	
+	div.inscon {
+		float: right;
+		margin-top: 20px;
+	}
+
+	@media screen and (max-width: 665px){
+		div.inscon {
+			margin: 10px 35px 0 0;
+		}
+	}
+
+	@media screen and (max-width: 540px){
+		div.inscon {
+			width: 360px;
+			float: none;
+			margin: 0 auto;
+			margin-top: 0px;
+		}
+	}
+
+	@media screen and (max-width: 470px){
+		div.inscon {
+			width:100%;
+			float: none;
+			margin: 0 auto;
+			margin-top: 2%;
+		}
+	}
+
+		
+	a.inscrire, a.connect {	
+		width: 150px;
+		height: 30px;
+		padding-top: 5px; 
+		margin-right: 20px;
+		background: #fff;
+		text-decoration: none;
+		border-radius: 5px;
+		text-align: center;
+		float: left;
+		color: #000;
+		font-size: 1.9rem;
+
+	}
+
+	@media screen and (max-width: 665px){
+		a.inscrire, a.connect {	
+			width: 110px;
+		}
+	}
+
+	.langue {
+		margin-left: 25px; 
+		float: left;
+	}
+
+	@media screen and (max-width: 540px){
+		.langue{
+			margin-left: 0px; 
+			float: left;
+		}
+	}
+
+	.langfr, .langen{
+		width: 70px;
+		height: 30px;
+		background: #fff;
+		padding-top: 7px;
+		text-align: center;
+		border-radius: 5px;
+		font-size: 1.6rem;
+		font-weight: 400;
+	}
+
+	.langfr img{
+		width: 22px;
+	}
+
+	.langfr img
+	{
+		width: 22px;
+	}
+
+	.langen
+	{
+		display: none;
+		position: absolute;
+	}
+}
+
+@media screen and (max-width: 665px){
+	header {
+		position: relative;
+		height: 110px;
+	}
+}
+
+div.bg img{
+	width: 100%;
+}
+
+@media screen and (max-width: 540px){
+	div.bg img{
+		width: 100%;
+		height: 120px;
+	}
+}
+
+@media screen and (max-width: 470px){
+	div.bg img{
+		width: 100%;
+		height: 110px;
+	}
+}

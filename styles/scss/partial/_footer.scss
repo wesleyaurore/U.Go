@@ -1,0 +1,32 @@
+/*------------Footer-------------*/
+
+footer{
+	width: 100%;
+	position: relative;
+	top: 40px; 
+	clear: both;
+	background: #358ccb;
+	font-size: 2.1rem;
+
+	h2{
+		margin: 10px 0 10px 10%;
+		color: #fff;
+	}
+
+	ul{
+		float: left;
+		list-style: none;
+		padding: 0 0 15px 10%;
+
+		li a{
+			text-decoration: none;
+			color: #fff;
+			font-size: 1.5rem;
+			font-weight: 200;
+		}
+
+		li a:hover{
+			text-decoration: underline;
+		}
+	}
+}

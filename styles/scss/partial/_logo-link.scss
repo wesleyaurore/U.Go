@@ -1,0 +1,33 @@
+/*--------------logo link--------------*/
+.back-home-a{
+	width: 120px;
+	display: block;
+	position: absolute;
+	left: 1%;
+	top: 25%;
+
+	img.logo-link{
+		float: left;
+		width: 30px;
+		transition: 0.5s;
+
+		&:hover{
+			width: 40px;
+		}
+	}
+
+	.back-home{
+		width: 80px;
+		margin-top: 10px;
+		overflow: hidden;
+		transition: 1s;
+		float: left;
+
+		.back-home-p{
+			width: 80px;
+			font-size: 2rem;
+			text-decoration: none;
+			color: #000;
+		}
+	}
+}

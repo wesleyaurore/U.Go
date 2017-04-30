@@ -1,0 +1,185 @@
+/*------------Aside---------------*/
+
+aside{
+	width: 22%;
+	margin: 0.5% 0 0 1%;
+	position: relative;
+	bottom: 5px;
+	border: solid 1px #358ccb;
+	font-size: 1.7rem;
+	float: left;
+
+	button{
+		width: 100%;
+		height: 45px;
+		border: none;
+		position: relative;
+		text-align: center;
+		font-family: 'Josefin Sans', sans-serif;
+		font-size: 1.8rem;
+		font-weight: 600;
+		background: #358ccb;
+		color: #fff;
+	}
+
+	button img{
+		display: none;
+	}
+
+	@media screen and (max-width: 1100px){
+		button img{
+			display: initial;
+			position: absolute;
+			bottom: 3px;
+			right: 48%;
+			transition: transform 0.25s;
+		}
+	}
+	
+	@media screen and (max-width: 1100px){
+		.deroulant{
+			height: 0;
+			overflow: hidden;
+
+		}
+	}
+
+	h3{
+		text-align: left;
+		font-weight: 300;
+		font-size: 2rem;
+		margin-bottom: 10px; 
+	}
+	
+	div.prix, div.notes{
+		width: 90%;
+		margin: 20px auto 0;
+		text-align: center;
+		border-bottom: solid 1px #eae8e8; 
+	}
+	
+	div.prix input, div.notes input{
+		margin-bottom: 30px;
+		color: #358ccb;
+	}
+
+	input[type=range]{
+	  -webkit-appearance: none;
+	  margin: 10px 0;
+	  width: 80%;
+	}
+
+	input[type=range]:focus{
+	  outline: none;
+	}
+
+	input[type=range]::-webkit-slider-runnable-track{
+	  width: 100%;
+	  height: 5px;
+	  cursor: pointer;
+	  border-radius: 1px;
+	  background: #358ccb;
+	}
+
+	input[type=range]::-webkit-slider-thumb{
+	  width: 15px;
+	  height: 15px;
+	  margin-top: -5px;
+	  cursor: pointer;
+	  border: 1px solid #626262;
+	  border-radius: 25px;
+	  background: #eae8e8;
+	  -webkit-appearance: none;
+	}
+	
+	div.prix p, div.notes p{
+		margin: 10px 0; 
+	}
+
+	div.etoile{
+		width: 90%;
+		margin: 20px auto;
+		padding-left: 5px; 
+		border-bottom: solid 1px #eae8e8; 
+	}
+
+	
+	div.etoile p:last-of-type{
+		margin-bottom: 20px; 
+	}
+
+	div.etoile p{ 
+		margin-top: 3px;
+	}
+
+	div.service, div.activite, div.notes,
+	div.annul, div.hbgm{
+		width: 90%;
+		margin: 0 auto;
+		padding-left: 5px; 
+		border-bottom: solid 1px #eae8e8;
+	}
+
+	@media screen and (max-width: 1100px){
+		div.prix, div.etoile, div.service, div.activite, div.notes,
+		div.annul, div.hbgm{
+			width: 33.33%;
+			overflow: hidden;
+			height: 200px;
+			padding-left: 10px; 
+			margin:0 auto;
+			float: left;
+			border-bottom: solid 1px #eae8e8;
+			border-right: solid 1px #eae8e8;
+		}
+	}
+
+	@media screen and (max-width: 665px){
+		div.prix, div.etoile, div.service, div.activite, div.notes,
+		div.annul, div.hbgm{
+			width: 50%;
+		}
+	}
+
+	div.service p, div.activite p, 
+	div.annul p, div.hbgm p{
+		padding-bottom: 3px; 
+	}
+	
+	div.service p:last-of-type, div.activite p:last-of-type,
+	div.annul p:last-of-type, div.hbgm p:last-of-type{
+		padding-bottom: 20px; 
+	}
+	
+	div.service label, div.activite label, div.annul label,
+	div.hbgm label{
+		font-weight: 300;
+	}
+}
+
+@media screen and (max-width: 1100px){
+	aside
+	{
+		width: 100%;
+		margin: 0 auto;
+		border: none;
+	}
+}
+
+@media screen and (max-width: 665px){
+	aside{
+		width: 100%;
+		margin: 0 auto;
+		border: none;
+	}
+}
+
+
+
+
+
+
+
+
+
+

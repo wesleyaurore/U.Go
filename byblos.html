@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1"/> 
+	<title>U!Go</title>
+	<link rel="icon" type="image/png" sizes="96x96" href="img-layout/favicon.png">
+	<link rel="stylesheet" href="styles/css/screen.css">
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,600,700" rel="stylesheet">
+	
+</head>
+<body>
+	<main>
+		<header>
+			<h1>
+				<a href="index.html" class="logo">
+					<img src="img-layout/ugo.svg" alt="logo">
+				</a>
+			</h1>
+			<div class="inscon clearfix">
+				<a href="#" class="inscrire">S'inscrire</a>
+
+				<a href="#" class="connect">Se connecter</a>
+
+				<div class="langue">
+					<p class="langfr">FR <img src="img-layout/triangle.png" alt=""></p>
+					<p class="langen">EN</p>
+				</div>
+			</div>
+		</header>
+		
+		<a href="../home.html" class="back-home-a">
+			<span class="back-home"><p class="back-home-p">Return to</p></span>
+			<img class="logo-link" src="img-layout/logo-link.svg" alt="logo link">
+		</a>
+
+		<div class="bg">
+			<figure>
+				<img src="img-content/azur.png" alt="saint-tropez">
+			</figure>
+		</div>
+
+		<nav class="clearfix">
+			<form method="post">
+				<div>
+					<label for="arrive">Arrivée</label>
+					<br> 
+					<input type="date" id="arrive" required>
+				</div>
+				<div>
+					<label for="depart">Départ</label>
+					<br>
+					<input type="date" id="depart" required> 
+				</div>
+				<div>
+					<label for="chambre">Nombres de personnes</label>
+					<br>
+					<select id="chambre" required>
+						<option value="personne1">1 Chambre-1 Personne </option>
+						<option value="personne2">1 Chambre-2 Personnes </option>
+						<option value="personne4">2 Chambre-2 Personnes </option>
+						<option value="personne6">3 Chambre-2 Personnes </option>
+					</select>
+				</div>
+				<div>
+					<input type="submit" id="recherche" value="Rechercher">	
+				</div>
+			</form>
+		</nav>
+
+		<aside class="clearfix">
+			<button>Affiner la recherche<img src="img-layout/fleche.svg" alt="fleche" width="15"></button>
+			<div class="deroulant">
+				<div class="prix">
+					<h3>Prix :</h3>
+					<p>0 à 500€+</p>
+					<input type="range">
+				</div>
+
+				<div class="etoile">
+					<h3>Nombre d'étoile :</h3>
+					<form action="post">
+						<p>
+							<input type="checkbox" id="star1" checked>
+							<label for="star1"><img src="img-layout/star1.png" alt="etoile"></label>
+						</p>
+						<p>
+							<input type="checkbox" id="star2" checked>
+							<label for="star2"><img src="img-layout/star2.png" alt="etoile"></label>
+						</p>
+						<p>
+							<input type="checkbox" id="star3" checked>
+							<label for="star3"><img src="img-layout/star3.png" alt="etoile"></label>
+						</p>
+						<p>
+							<input type="checkbox" id="star4" checked>
+							<label for="star4"><img src="img-layout/star4.png" alt="etoile"></label>
+						</p>
+						<p>
+							<input type="checkbox" id="star5" checked>
+							<label for="star5"><img src="img-layout/star5.png" alt="etoile"></label>
+						</p>
+					</form>
+				</div>
+				<div class="service">
+					<h3>Services et équipements :</h3>
+					<form action="post">
+						<p>
+							<input type="checkbox" id="equip" checked>
+							<label for="equip">Parking</label>
+						</p>
+						<p>
+							<input type="checkbox" id="transport" checked>
+							<label for="transport">Transport(gare, aeroport)</label>
+						</p>
+						<p>
+							<input type="checkbox" id="restaurant" checked>
+							<label for="restaurant">Restaurant</label>
+						</p>
+						<p>
+							<input type="checkbox" id="wifi" checked>
+							<label for="wifi">Wifi</label>
+						</p>
+					</form>
+				</div>
+				<div class="activite">
+					<h3>Activités alentours :</h3>
+					<form action="post">
+						<p>
+							<input type="checkbox" id="golf" checked>
+							<label for="golf">Golf</label>
+						</p>
+						<p>
+							<input type="checkbox" id="spa" checked>
+							<label for="spa">Spa</label>
+						</p>
+						<p>
+							<input type="checkbox" id="massage" checked>
+							<label for="massage">Massage</label>
+						</p>
+						<p>
+							<input type="checkbox" id="sortie" checked>
+							<label for="sortie">Sortie en mer</label>
+						</p>
+					</form>
+				</div>
+				<div class="notes">
+					<h3>Notes des visiteurs :</h3>
+					<p>0 à 10</p>
+					<input type="range">
+				</div>
+				<div class="hbgm">
+					<form action="post">
+						<h3>Type d’hébergement :</h3>
+						<p>
+							<input type="checkbox" id="hotel" checked>
+							<label for="hotel">Hôtel</label>
+						</p>
+						<p>
+							<input type="checkbox" id="hote" checked>
+							<label for="hote">Chambre d’hôtes</label>
+						</p>
+
+						<h3>Paiement et annulation :</h3>
+						<p>
+							<input type="checkbox" id="annul" checked>
+							<label for="annul">Annulation gratuite</label>
+						</p>
+					</form>				
+				</div>
+			</div>
+		</aside>
+
+		<article id="article-content" class="clearfix">
+			<div id="carousel">
+				<h2>HOTEL BYBLOS</h2>
+				<ul class="max-img">
+					<li class="visible"> 
+						<img src="img-content/parchotel.jpg" alt="parc">
+					</li>
+					<li class="">
+						<img src="img-content/hall.jpg" alt="hall">
+					</li>
+					<li class="">
+						<img src="img-content/restaurant.jpg" alt="restaurant">
+					</li>
+					<li class="">
+						<img src="img-content/chambre.jpg" alt="chambre">
+					</li>
+					<li class="">
+						<img src="img-content/suite.jpg" alt="suite">
+					</li>
+				</ul>
+
+				<ul class="min-img">
+					<li class="visible">
+						<img src="img-content/parchotel.jpg" alt="parc">
+					</li>
+					<li class="">
+						<img src="img-content/hall.jpg" alt="hall">
+					</li>
+					<li class="">
+						<img src="img-content/restaurant.jpg" alt="restaurant">
+					</li>
+					<li class="">
+						<img src="img-content/chambre.jpg" alt="chambre">
+					</li>
+					<li class="">
+						<img src="img-content/suite.jpg" alt="suite">
+					</li>
+				</ul>
+			</div>
+
+			<div class="reservation">
+				<p>1 Chambre - 2 Personnes</p>
+				<p>14/02/2017</p>
+				<p>1/03/2017</p>
+				<p>357€</p>
+			</div>
+
+			<button>Réserver</button>
+
+			<div class="localisation">
+				<h3>Hôtel Byblos Saint-Tropez</h3>
+				<p>20 Avenue Paul Signac, 83990 Saint-Tropez</p>
+
+				<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5810.138206870674!2d6.63864707412771!3d43.27092808238885!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xbdb83137276eeecd!2sH%C3%B4tel+Byblos+Saint-Tropez!5e0!3m2!1sfr!2sfr!4v1485464108831" width="260" height="220" frameborder="0" style="border:0" allowfullscreen>
+				</iframe>
+			</div>
+
+
+			<div class="information">
+
+				<p class="description">L’hôtel Byblos vous accueille dans un écrin de luxe au cœur du village de Saint-Tropez. Hôtel de charme pour des séjours d’exception sur la Côte d’Azur, le Byblos organise également des évènements sur mesure, mariages, réceptions, incentives ou encore séminaires.
+				</p>
+
+				<ul class="picto">
+					<li><img src="img-layout/parking.png" alt="parking">
+					</li>
+					<li>
+						<img src="img-layout/wifi.png" alt="wifi">
+					</li>
+					<li>
+						<img src="img-layout/restaurant.png" alt="restaurant">
+					</li>
+					<li>
+						<img src="img-layout/spa.png" alt="spa">
+					</li>
+				</ul>
+
+				<figure class="cb">
+					<img src="img-layout/cb.png" alt="cb">
+				</figure>
+
+				<div class="info">
+					<p>Superficie comprise entre 28 et 35 m²</p>
+					<p>Proche du Moulin de Paillas<br>et de la base de loisir du Mur</p>
+				</div>
+
+				<div class="commentaire">
+					<p>Laurent .A</p>
+					<p>« Très bien situé.Personnel aux petits soin parfait, chambre au top<br>
+						et le petit déj un régal,à refaire sans soucis... »
+					</p>
+				</div>	
+			</div>
+		</article>
+
+		<footer class="clearfix">
+			<h2>Plan du site</h2>
+			<ul>
+				<li><a href="">Villes</a></li>
+				<li><a href="">Quartiers</a></li>
+				<li><a href="">Aéroports</a></li>
+				<li><a href="">Hôtels</a></li>
+				<li><a href="">Sites d'intérêt</a></li>
+			</ul>
+			<ul>
+				<li><a href="">Maisons d'hôtes</a></li>
+				<li><a href="">Tous les types d'hébergement</a></li>
+				<li><a href="">Tous les thèmes</a></li>
+				<li><a href="">Commentaires</a></li>
+				<li><a href="">FAQ</a></li>
+			</ul>
+			<ul>
+				<li><a href="">Careers</a></li>
+				<li><a href="">Centre de presse</a></li>
+				<li><a href="">Conditions Générales d'Utilisation</a></li>
+				<li><a href="">Confidentialité et Cookies</a></li>
+				<li><a href="">Nous contacter</a></li>
+			</ul>
+		</footer>
+	</main>
+
+	<script src="js/app.js" type="text/javascript"></script>
+</body>
+</html>

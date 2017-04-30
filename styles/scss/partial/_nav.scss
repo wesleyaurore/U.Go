@@ -1,0 +1,118 @@
+/*----------Nav---------------*/
+
+nav
+{
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	position: relative;
+	bottom: 5px;
+	margin-bottom: 1.5%;
+	background: #eae8e8;
+	height: 70px;
+
+	div{
+		width: 200px;
+		height: 70px;
+		float: left;
+		margin-top: 5px;
+		font-size: 1.9rem;
+		font-weight: 400;
+		transition: 0.5s;
+		
+		input{
+			width: 180px;
+			height: 35px;
+			border-radius: 5px; 
+			border: none;
+			padding-left: 10px;
+		}
+
+		select{
+			width: 180px;
+			height: 35px;
+			border-radius: 5px; 
+			border: none;
+			padding-left: 10px;
+		}
+
+		input#recherche{
+			width: 180px;
+			height: 35px;
+			border-radius: 5px; 
+			border: none;
+			margin-top: 19px; 
+			padding-left: 0;
+			font-size: 1.4rem;
+			background: #358ccb;
+			color: #fff;	
+		}
+
+		@media screen and (max-width: 1100px){
+			input#recherche{ margin: 14px auto;	}
+		}
+
+		@media screen and (max-width: 665px){
+			input#recherche{
+				margin-right: 20px; 
+				padding-left: 0;
+			}
+		}
+	}
+
+	@media screen and (max-width: 665px){
+		div{
+			float: none;
+			margin: 0 auto;
+		}
+	}
+
+	@media screen and (max-width: 1100px){
+		div:last-of-type{
+				clear: both;
+				height: 40px;
+				margin: 0 auto 20px;
+				width: 97%;
+				text-align: center;
+			}
+		}
+
+	@media screen and (max-width: 665px){
+		div:last-of-type{margin: 5px auto 25px;	}
+	}
+	
+}
+
+@media screen and (max-width: 1100px){
+	nav{ 
+		margin-bottom: 0; 
+		height: auto; 
+	}
+}
+
+@media screen and (max-width: 665px){
+	nav{
+		width: 100%;
+		background: #eae8e8;
+		display: block;
+	}
+}
+
+nav.active
+{
+	height: 70px;
+	z-index: 9999;
+	position: fixed;
+	top: 0;
+	transition: 1s;
+}
+
+@media screen and (max-width: 1100px){
+	nav.active{
+		height: 70px;
+		z-index: 9999;
+		position: relative;
+		top: 0;
+		transition: 1s;
+	}
+}
